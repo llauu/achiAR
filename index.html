@@ -100,9 +100,8 @@
     <a-scene vr-mode-ui="enabled: false;" renderer="antialias: true; alpha: true; precision: mediump;" embedded
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
 
-        <a-marker videohandler preset="custom" id="anchor" type="pattern" src="multimedia/pattern-achiTest4.patt"
-            registerevents>
-            <video src="multimedia/achiConmusica.mp4" preload="auto" id="vid" response-type="arraybuffer" loop
+        <a-marker videohandler preset="custom" id="anchor" type="pattern" url='pattern-achiTest4.patt' registerevents>
+            <video src='achiConmusica.mp4' preload="auto" id="vid" response-type="arraybuffer" loop
                 crossorigin="anonymous" webkit-playsinline autoplay controls muted="true" playsinline></video>
             <a-video src="#vid" position="0 0.1 0" width="1.5" rotation="270 0 0"></a-video>
         </a-marker>
